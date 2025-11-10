@@ -1,0 +1,27 @@
+solar:
+  panel_efficiency: 0.21 # High-efficiency modern N-type/TOPCon panels
+  system_losses: 0.87 # Lower losses due to optimized inverters & MPPT
+  rooftop_area:
+    conservative: 8_000_000 # (for reference)
+    realistic: 20_000_000 # (for reference)
+    aggressive: 55_000_000 # Aggressive adoption: large-scale municipal + commercial rooftops
+
+wind:
+  turbine_capacity_mw: 3.6 # Modern onshore turbine rating (Vestas V136 class)
+  turbines:
+    conservative: 50 # (for reference)
+    realistic: 120 # (for reference)
+    aggressive: 320 # Aggressive regional wind buildout with optimized placement
+
+emissions:
+  fossil_gas_g_per_kwh: 418
+  solar_pv_g_per_kwh: 55
+  wind_g_per_kwh: 13
+
+costs:
+  fossil_gas_eur_per_mwh: 100
+  solar_pv_eur_per_mwh: 45
+  wind_eur_per_mwh: 60
+
+scenarios:
+  active: aggressive # default scenario used in backend + notebook
