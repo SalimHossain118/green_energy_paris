@@ -1,0 +1,4 @@
+(green_energy) G:\EPITA Course Materials\pythonML\green_energy_paris>jupyter notebook
+
+
+(base) G:\EPITA Course Materials\pythonML\green_energy_paris>conda activate green_energy
